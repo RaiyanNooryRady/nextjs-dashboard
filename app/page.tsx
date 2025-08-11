@@ -3,7 +3,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import styles from '@/app/ui/home.module.css';
 import styles2 from '@/app/ui/test.module.css';
-
+import { inter } from '@/app/ui/fonts';
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
@@ -24,6 +24,7 @@ export default function Page() {
             </a>
             , brought to you by Vercel.
           </p>
+          <p className={`${inter.className} text-2xl text-yellow-500`}>This is font test</p>
           <h1 className="text-4xl font-bold text-red-500 ps-10 border-2 border-red-500 rounded-xl">Testing Tailwind</h1>
           <Link
             href="/login"
